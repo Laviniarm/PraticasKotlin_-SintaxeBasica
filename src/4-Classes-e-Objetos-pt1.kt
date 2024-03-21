@@ -29,7 +29,6 @@ fun main() {
             println("Idade do cliente: $idade")
         }
     }
-
     // Crie uma instância de Cliente e chame o método mostrarIdade() para verificar seu funcionamento.
     val cliente = Cliente()
     cliente.nome = "Mateus"
@@ -45,7 +44,6 @@ fun main() {
             println("Guerreiro ataca com sua espada!")
         }
     }
-
     class Mago : Personagem() {
         override fun atacar() {
             println("Mago lança uma fentiço poderoso!")
@@ -63,26 +61,22 @@ fun main() {
     abstract class FormaGeometrica {
         abstract fun calcularArea(): Double
     }
-
     class Retangulo(val altura: Double, val largura: Double) : FormaGeometrica() {
         override fun calcularArea(): Double {
             return altura * largura
         }
     }
-
     class Circulo(val raio: Double) : FormaGeometrica() {
         override fun calcularArea(): Double {
             return Math.PI * raio * raio
         }
     }
-
     // Crie instâncias dessas duas classes e chame o método calcularArea() em cada uma delas para verificar o resultado.
     val retangulo = Retangulo(6.0, 3.0)
     val circulo = Circulo(8.0)
 
     println("Área do Retângulo: ${retangulo.calcularArea()}")
     println("Área do Círculo: ${circulo.calcularArea()}")
-
     // Questão 5
     class ContaBancaria {
         var numeroConta: String = ""
@@ -96,8 +90,6 @@ fun main() {
                 }
             }
     }
-
-
     // Crie uma instância de ContaBancaria. Altere o nome do titular para uma string que inicie com letra minúscula e mude o saldo para um valor negativo. Imprima os valores para verificar se as regras dos getters e setters estão sendo aplicadas corretamente.
     var conta = ContaBancaria()
     conta.numeroConta = "1234567"
